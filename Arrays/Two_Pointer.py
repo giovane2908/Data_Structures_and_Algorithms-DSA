@@ -1,4 +1,4 @@
-#Given a string, reverse the order of characters in each word within a sentence while still preserving whitespace and initial word order.
+#Dada uma string, inverta a ordem dos caracteres em cada palavra dentro de uma frase, preservando os espaços em branco e a ordem inicial das palavras.
 
 def reverseWords(string):
     res = ''
@@ -17,6 +17,6 @@ def reverseWords(string):
     return res[1:]
 
 
-input_string = "hello world"
+input_string = "ola mundo"
 result = reverseWords(input_string)
 print(result)

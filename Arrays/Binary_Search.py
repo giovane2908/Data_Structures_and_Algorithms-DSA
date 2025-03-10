@@ -1,6 +1,8 @@
+#Dado um array ordenado de números inteiros de 1 até n, qual é a posição de um número específico x dentro desse array usando a busca binária? Além disso, quantos passos são necessários para encontrar o número?
+
 def binary_search(nums, n):
     left = 0 
-    right = len(nums)  
+    right = len(nums) - 1  
     steps = 0
 
     while left < right:
@@ -13,7 +15,7 @@ def binary_search(nums, n):
         elif nums[mid] < n:
             left = mid + 1
         else:
-            right = mid
+            right = mid - 1
 
     return -1
 number = int(input("Digite o numero a ser buscado: "))
