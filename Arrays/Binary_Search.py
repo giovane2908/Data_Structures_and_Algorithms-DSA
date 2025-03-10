@@ -16,9 +16,9 @@ def binary_search(nums, n):
             right = mid
 
     return -1
+number = int(input("Digite o numero a ser buscado: "))
 array_len = int(input("Digite o tamanho do array: "))
-
 array_len = [i for i in range(1, array_len+1)]
 
-binary_search(array_len, 3)
+binary_search(array_len, number)
 
