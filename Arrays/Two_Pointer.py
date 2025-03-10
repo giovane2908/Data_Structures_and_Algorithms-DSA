@@ -2,10 +2,10 @@
 
 def reverseWords(string):
     res = ''
-    l, r = 0, 0 #Pointers left and right
+    l, r = 0, 0 #Ponteiros para o inicio e fim da palavra
 
-    while r < len(string):
-        if string[r] != ' ':
+    while r < len(string): 
+        if string[r] != '':
             r += 1
         else:
             res += string[l:r+1][::-1]
@@ -13,10 +13,10 @@ def reverseWords(string):
             l = r
 
     res += ' '
-    res += string[l:r + 2][::-1]
+    res += string[l:r][::-1]
     return res[1:]
 
 
-input_string = ""
+input_string = "the sky is blue   dsaa  sda a a sdda da"
 result = reverseWords(input_string)
 print(result)
