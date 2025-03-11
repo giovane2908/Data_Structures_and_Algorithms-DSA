@@ -17,6 +17,6 @@ def reverseWords(string):
     return res[1:]
 
 
-input_string = "ola mundo"
+input_string = input("Digite a string: ")
 result = reverseWords(input_string)
 print(result)
