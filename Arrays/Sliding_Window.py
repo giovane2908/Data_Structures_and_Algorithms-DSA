@@ -1,4 +1,4 @@
-
+#Dada uma string, retorne o comprimento máximo de uma substring que contenha no máximo duas ocorrências de cada caractere.
 def maximumLengthSubstring(string: str) ->int:
     l, r = 0, 0
     max_len = 1
